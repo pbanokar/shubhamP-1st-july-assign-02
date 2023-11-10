@@ -1,0 +1,30 @@
+Started by user shubham
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/job-2023Q1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+using credential git-token
+Cloning the remote Git repository
+Cloning repository https://github.com/shubham51294/shubhamP-1st-july-assign-02.git
+ > git init /root/.jenkins/workspace/job-2023Q1 # timeout=10
+Fetching upstream changes from https://github.com/shubham51294/shubhamP-1st-july-assign-02.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+using GIT_ASKPASS to set credentials git-token
+ > git fetch --tags --force --progress -- https://github.com/shubham51294/shubhamP-1st-july-assign-02.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/shubham51294/shubhamP-1st-july-assign-02.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/2023Q1^{commit} # timeout=10
+Checking out Revision e92edb4541879f1a62247963f1de83040ff9ccf3 (refs/remotes/origin/2023Q1)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e92edb4541879f1a62247963f1de83040ff9ccf3 # timeout=10
+Commit message: "Create index.html"
+ > git rev-list --no-walk e92edb4541879f1a62247963f1de83040ff9ccf3 # timeout=10
+[job-2023Q1] $ /bin/sh -xe /mnt/servers/apache-tomcat-9.0.82/temp/jenkins10981449020225752718.sh
++ cd /root/.jenkins/workspace/job-2023Q1
++ cp -r index.html /var/www/html/
++ chmod -R 644 /var/www/html/index.html
+Finished: SUCCESS
