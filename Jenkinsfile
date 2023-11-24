@@ -10,8 +10,8 @@ pipeline {
             steps {
                 sh "yum install httpd -y"
                 sh "systemctl start httpd"
-                sh "echo 'hello' >> /var/www/html/index.html"
-                sh "chmod -R 777 /var/www/html/index.html"
+                sh "cp -r dev.html /var/www/html/
+                sh "chmod -R 777 /var/www/html/dev.html"
             }
         }
         }
